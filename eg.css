@@ -1,0 +1,38 @@
+/* Styling for the parent container */
+.parent {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 2px solid #333;
+  }
+  
+  /* Relative positioning for the relative-box */
+  .relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #7FB3D5;
+  }
+  
+  /* Absolute positioning for the absolute-box */
+  .absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #F08080;
+  }
+  
+  /* Adding content before and after absolute-box */
+  .absolute-box::before {
+    content: "Before";
+    color: white;
+    background-color: #333;
+    padding: 5px;
+  }
+  
+  .absolute-box::after {
+    content: "After";
+    color: white;
+    background-color: #333;
+    padding: 5px;
+  }

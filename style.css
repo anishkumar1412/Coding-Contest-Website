@@ -1,0 +1,385 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* align items in*/
+    /* justify-content:center; */
+    font-family: 'Caveat', cursive;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+}
+
+/* Navigation Bar:Logo and image */
+#logo {
+    margin: 12px 29px;
+
+}
+
+#logo img {
+    height: 60px;
+    width: 60px;
+
+
+
+}
+
+#navbar ul {
+    display: flex;
+}
+
+
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar ul li {
+    /* color:white;
+     */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+/* Navigation Bar:List Styling */
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+
+
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    background-color: rgba(225, 70, 249, 2);
+    border-radius: 12px;
+    font-family: cursive;
+
+}
+
+/* HomeSection */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 475px;
+    margin-bottom: 0px;
+}
+
+#home::before {
+    content: "";
+    background: url("971.jpg") no-repeat center center/cover;
+    
+     /* background:lightskyblue; */
+     /* background: url("web-design-2906159_1280.jpg") no-repeat center center/cover; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+    top: 0px;
+}
+
+#home h1 {
+    color: rgb(255, 242, 0);
+    text-align: center;
+    font-family: cursive;
+    text-decoration:color;
+}
+
+#home p {
+    color:cornsilk;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+
+}
+
+.box {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 10px 5px 5px rgb(65, 64, 64);
+
+}
+
+.box:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+#services .box {
+    border: 2px solid rgb(0, 0, 0);
+    margin: 18px 5px;
+    padding: 24px;
+    background-color: lightskyblue;
+    border-radius: 20px;
+    height: 520px;
+
+}
+
+#services .box img {
+    height: 200px;
+    margin: auto;
+    display: block;
+
+    border-radius: 20px;
+
+}
+
+#services .box p {
+    font-family: 'Caveat', cursive;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+.services-container {
+    position: relative;
+    margin-top: 0px;
+}
+
+.services-container::before {
+    content: "";
+    background: url("971.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 736px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+
+}
+
+.services-container h1 {
+    border: 2px solid rgb(0, 0, 0);
+    width: 345px;
+    margin: auto;
+
+    padding: 3px;
+    border-radius: 12px;
+    height: 90px;
+
+    font-family: cursive;
+    font-size: 51px;
+
+}
+
+/* Client Section */
+#client-section {
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 2px solid black;
+    width: 624px;
+    margin: auto;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: lightskyblue;
+    width: 100%;
+    height: 56%;
+    z-index: -1;
+    opacity: 0.5;
+    /* top:0; */
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    ;
+}
+
+#clients img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 120px;
+    padding: 12px;
+    margin: 14px;
+}
+
+#clients {
+
+    transition: all 0.5s ease-in-out;
+}
+
+#clients:hover {
+    transform: scale(0.5);
+    cursor: pointer;
+
+}
+
+
+
+#partnerh1 {
+    font-family: cursive;
+    width: 60%;
+    margin: auto;
+    border: none;
+}
+
+/* Contact Section
+ */
+#contact {
+    position: relative;
+    font-family: cursive;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: lightskyblue;
+}
+
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 44px;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: cursive;
+
+}
+
+
+/* utility Classes  */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+
+
+
+}
+
+.btn {
+    padding: 6px 20px;
+
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    background-color: brown;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+
+
+}
+
+.center {
+    text-align: center;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: cursive;
+}
+
+#anish {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: wheat;
+    bottom: 0px;
+    height: 95px;
+    text-align: center;
+    margin-top: 88px;
+
+}
+
+footer .center {
+    padding: 31px;
+
+}
+.chat{
+    width: 135px;
+    height: 156px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    position: absolute;
+    top: 119px;
+    right: 9px;
+ background:whitesmoke;
+}.chat img{
+    height:69px;
+    width:65px;
+    margin:12px 35px;
+}
+.watsapp {
+    padding: 0px 7px;
+    margin:7px 18px;
+    background-color: rgb(22, 235, 47);
+    font-size: 14px;
+    border-radius: 9px;
+    border: 2px solid rgb(3, 4, 3);
+    font-family: cursive;
+    font-family:cursive;
+    font-weight: bold;
+}
